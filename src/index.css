@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .content{
+    @apply container m-auto px-5 md:px-0
+  }
+  .offer{
+    clip-path: polygon(75% 0%, 100% 0, 100% 100%, 51% 72%, 0 100%, 0% 0%);
+  }
+  .menu_a{
+    @apply md:px-6 xl:px-10 text-white font-semibold text-xl md:text-lg xl:text-xl relative after:duration-500 after:ease-in-out hover:after:w-full after:absolute  after:left-1/2 after:-translate-x-1/2 after:content-[""] after:bg-yellow after:rounded-full after:-bottom-2 after:w-0 after:h-[2px]
+  }
+  .f_menu_a{
+    @apply text-white font-normal text-base relative after:duration-500 after:ease-in-out hover:after:w-full after:absolute  after:left-1/2 after:-translate-x-1/2 after:content-[""] after:bg-yellow after:rounded-full after:-bottom-2 after:w-0 after:h-1
+  }
+  input:focus{
+    outline: none;
+    border: 1px solid #FCAE01;
+  }
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+#root{
+font-family: "Inter", sans-serif;
+}
+.slick-dots li{
+  margin: 0 !important;
+}
+.slick-dots li button{
+  margin: 0 !important;
+}
+.slick-dots li button:before{
+  top: -44px !important;
+  font-size: 10px !important; 
+}
